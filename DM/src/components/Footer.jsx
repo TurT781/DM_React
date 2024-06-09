@@ -1,21 +1,30 @@
-export default function Footer() {
-    return (
-      <footer className="Footer">
-        Créé par Flavien Patriarca AKA{" "}
-        <span role="img" aria-label="turt">
-        🐢
-        </span>{" "}
+import React from "react";
 
-        <span className=" span_footer">
+const Footer = () => {
+  return (
+    <footer className="footer">
+      <ul className="ulFooter">
+        <li>Créé par Flavien Patriarca AKA <span role="img" aria-label="turtle">🐢</span></li>
+        <span className="span_footer">
+          <li>
             <h1 className="h_footer">
-                <a href="#">Accueil</a>
+              <a href="/">Accueil</a>
             </h1>
-
+          </li>
+          <li>
             <h1 className="h_footer">
-                <a href="/contact" target="_blank">Conctact</a>
+              <a href="/products">Products</a>
             </h1>
+          </li>
+          <li>
+            <h1 className="h_footer">
+              <a href="/contact">Contact</a>
+            </h1>
+          </li>
         </span>
-
-      </footer>
-    );
+      </ul>
+    </footer>
+  );
 };
+
+export default Footer;

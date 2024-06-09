@@ -10,9 +10,17 @@ const Header = () => {
 
     <header className="header">
         <nav className="navLinkHeader">
-            <NavLink style={getActiveLink} to="/">Homepage</NavLink>
-            <NavLink style={getActiveLink} to="/products">Products</NavLink>
-            <NavLink style={getActiveLink} to="/contact">Contact</NavLink>
+            <ul className="ulHeader">
+                <li>
+                    <NavLink style={getActiveLink} to="/">Homepage</NavLink>
+                </li>
+                <li>
+                    <NavLink style={getActiveLink} to="/products">Products</NavLink>
+                </li>
+                <li>
+                    <NavLink style={getActiveLink} to="/contact">Contact</NavLink>
+                </li>
+            </ul>
         </nav>
     </header>
     );

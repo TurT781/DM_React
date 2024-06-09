@@ -1,4 +1,4 @@
-// src/components/ProductDetail.jsx
+
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { ProductDetails } from '../ProductDetails.jsx';
@@ -21,10 +21,10 @@ const ProductDetail = () => {
     return (
         <div className='product-details'>
             <h1>{product.title}</h1>
-            <img src={product.image} alt={`Image of the book ${product.title}`} />
+            <img src={product.image} alt={`Image du livre${product.title}`} />
             <p>{product.description}</p>
             <h5>{product.price}</h5>
-            <p>Author: {product.author.join(", ")}</p>
+            <p>Auteur: {product.author.join(", ")}</p>
         </div>
     );
 };

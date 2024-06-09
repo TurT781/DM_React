@@ -1,4 +1,3 @@
-// src/ProductDetails.js
 import { Product } from "./product";
 
 export class ProductDetails {
@@ -9,8 +8,8 @@ export class ProductDetails {
     }
 
     async getApi() {
-        const query = "fiction"; // Modifier la requête pour les livres
-        const maxResults = 16; // Limiter à 16 livres
+        const query = 'fiction'; 
+        const maxResults = 20; 
         const response = await fetch(
             `https://www.googleapis.com/books/v1/volumes?q=${query}&maxResults=${maxResults}`
         );
@@ -30,6 +29,7 @@ export class ProductDetails {
                     : "Image not available",
                 volumeInfo.description || "No description available",
                 volumeInfo.authors || ["Author unknown"]
+               
             );
         });
         this.products = products;

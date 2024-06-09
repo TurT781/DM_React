@@ -6,5 +6,6 @@ export class Product {
         this.image = image;
         this.description = description;
         this.author = author;
-    }
+    };
+    
 }

@@ -1,6 +1,6 @@
-// src/components/Products.jsx
+
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { ProductDetails } from '../ProductDetails.jsx';
 
 const productService = new ProductDetails();
@@ -8,9 +8,11 @@ const productService = new ProductDetails();
 const Products = () => {
     const [products, setProducts] = useState([]);
 
+
+
     useEffect(() => {
         productService.getApi().then(setProducts);
-    }, []);
+    }, []); 
 
     return (
         <div className="container">
@@ -32,4 +34,6 @@ const Products = () => {
     );
 };
 
+
 export default Products;
+

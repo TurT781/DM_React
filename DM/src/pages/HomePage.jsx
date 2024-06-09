@@ -1,6 +1,6 @@
 const HomePage = () => {
     return (
-      <div>
+      <div className="textHomePage">
         <p>
           HTML, qui signifie HyperText Markup Language, est le langage standard
           utilisé pour créer des documents web. Il est composé de balises qui

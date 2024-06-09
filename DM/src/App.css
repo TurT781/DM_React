@@ -32,8 +32,8 @@ body {
 }
 
 .logoHeader {
-    margin-top: 10px;
-    height: max-content;
+    margin-top: 1rem;
+    height: auto;
     position: absolute;
     left: 1rem;
 }
@@ -47,7 +47,6 @@ body {
 .ulHeader li {
     display: flex;
     margin: 2rem;
-
 }
 
 .ulHeader li a {
@@ -55,10 +54,148 @@ body {
     color: var(--text-color);
     font-weight: 500;
     font-size: 1.5rem;
-    
 }
 
 .ulHeader li a:hover,
 .ulHeader li a:focus {
     color: var(--main-color);
+}
+
+.textHomePage {
+    padding: 2rem;
+    background-color: var(--second-bg-color);
+    color: var(--text-color);
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.textHomePage p {
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .textHomePage {
+        padding: 3rem;
+        font-size: 1.4rem;
+    }
+
+    .ulHeader li a {
+        font-size: 1.8rem;
+    }
+}
+
+.sentence_haut {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6.25rem; /* 100px */
+    padding: 1.875rem; /* 30px */
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.txtImg {
+    position: relative;
+    flex: 1;
+    max-width: 20rem; /* 320px */
+    text-align: center;
+}
+
+.txt_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.5rem;
+}
+
+.hautp {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.background {
+    flex: 1;
+    text-align: center;
+    border: 0.1875rem solid #36C8C8; /* 3px */
+    border-radius: 0.3125rem; /* 5px */
+    padding: 0.625rem; /* 10px */
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.background p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.background strong {
+    color: var(--main-color);
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: var(--main-color);
+    margin: 1rem 0;
+}
+.footer {
+    background-color: var(--second-bg-color);
+    padding: 1rem;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.ulFooter {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.ulFooter li {
+    display: flex;
+    margin: 2rem;
+}
+
+.ulFooter li span {
+    display: flex;
+    align-items: center;
+}
+
+.ulFooter li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.ulFooter li a:hover,
+.ulFooter li a:focus {
+    color: var(--main-color);
+}
+
+.span_footer {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .sentence_haut {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .txtImg {
+        margin-bottom: 1rem;
+    }
+
+    .background {
+        width: 100%;
+    }
 }

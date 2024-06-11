@@ -11,6 +11,7 @@
     --second-bg-color: #112e42;
     --text-color: #ededed;
     --main-color: #00abf0;
+    --font-size-base: 1rem; /* 16px */
 }
 
 body {
@@ -69,7 +70,7 @@ body {
     line-height: 1.6;
     margin: 2rem;
     border-radius: 0.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 .textHomePage p {
@@ -91,10 +92,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 6.25rem;
-    /* 100px */
-    padding: 1.875rem;
-    /* 30px */
+    margin-top: 6.25rem; /* 100px */
+    padding: 1.875rem; /* 30px */
     gap: 2rem;
     flex-wrap: wrap;
 }
@@ -102,8 +101,7 @@ body {
 .txtImg {
     position: relative;
     flex: 1;
-    max-width: 20rem;
-    /* 320px */
+    max-width: 20rem; /* 320px */
     text-align: center;
 }
 
@@ -125,12 +123,9 @@ body {
 .background {
     flex: 1;
     text-align: center;
-    border: 0.1875rem solid #36C8C8;
-    /* 3px */
-    border-radius: 0.3125rem;
-    /* 5px */
-    padding: 0.625rem;
-    /* 10px */
+    border: 0.1875rem solid #36C8C8; /* 3px */
+    border-radius: 0.3125rem; /* 5px */
+    padding: 0.625rem; /* 10px */
     background-color: var(--bg-color);
     color: var(--text-color);
 }
@@ -219,7 +214,7 @@ hr {
     width: 20rem;
     padding: 0.75rem;
     font-size: 1rem;
-    border: 2px solid #ccc;
+    border: 0.125rem solid #ccc; /* 2px */
     border-radius: 0.25rem;
 }
 
@@ -279,7 +274,7 @@ hr {
     width: 20rem;
     padding: 0.75rem;
     font-size: 1rem;
-    border: 2px solid #ccc;
+    border: 0.125rem solid #ccc; /* 2px */
     border-radius: 0.25rem;
 }
 
@@ -311,10 +306,12 @@ hr {
 .btn:hover {
     background-color: #007cad;
 }
-.allProduct{
+
+.allProduct {
     background-color: var(--bg-color);
 }
-.H1product{
+
+.H1product {
     font-size: 4rem;
     font-family: 'Kaushan Script', cursive;
     height: 10rem;
@@ -322,14 +319,94 @@ hr {
     position: inherit;
     text-align: center;
     align-content: center;
-   
 }
-.container{
+
+.container {
     background-color: var(--second-bg-color);
 }
+.product-details {
+    padding: 2rem;
+    background-color: var(--second-bg-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    max-width: 60rem; 
+    margin: 2rem auto;
+}
 
+.product-details h1 {
+    font-size: 2.5rem;
+    font-family: 'Kaushan Script', cursive;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.box-product-image {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 1.5rem;
+}
+.box-product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    display: block;
+    margin:0;
+
+
+}
+
+.box-product-description, 
+.box-product-price, 
+.box-product-author {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: var(--bg-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.box-product-price h5 {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.box-product-author p {
+    font-size: 1.2rem;
+    text-align: center;
+}
 
 @media (max-width: 768px) {
+    .ulHeader {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .ulHeader li {
+        margin: 1rem 0;
+    }
+
+    .logoHeader {
+        position: static;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .footer {
+        padding: 1rem 0;
+    }
+
+    .ulFooter {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .ulFooter li {
+        margin: 1rem 2;
+    }
     .sentence_haut {
         flex-direction: column;
         align-items: center;
@@ -343,3 +420,4 @@ hr {
         width: 100%;
     }
 }
+

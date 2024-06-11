@@ -11,18 +11,22 @@
     --second-bg-color: #112e42;
     --text-color: #ededed;
     --main-color: #00abf0;
-    --font-size-base: 1rem; /* 16px */
+    --font-size-base: 1rem;
+    /* 16px */
 }
+
 
 body {
     font-family: 'Poppins', sans-serif;
     color: var(--text-color);
     background-color: var(--bg-color);
+
 }
 
 .header {
     background-color: var(--second-bg-color);
     padding: 1rem;
+    font-family: 'Kaushan Script', cursive;
 }
 
 .navLinkHeader {
@@ -54,7 +58,7 @@ body {
     text-decoration: none;
     color: var(--text-color);
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 3rem !important;
 }
 
 .ulHeader li a:hover,
@@ -77,7 +81,7 @@ body {
     margin-bottom: 1.5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 425px) {
     .textHomePage {
         padding: 3rem;
         font-size: 1.4rem;
@@ -92,8 +96,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 6.25rem; /* 100px */
-    padding: 1.875rem; /* 30px */
+    margin-top: 6.25rem;
+    /* 100px */
+    padding: 1.875rem;
+    /* 30px */
     gap: 2rem;
     flex-wrap: wrap;
 }
@@ -101,7 +107,8 @@ body {
 .txtImg {
     position: relative;
     flex: 1;
-    max-width: 20rem; /* 320px */
+    max-width: 20rem;
+    /* 320px */
     text-align: center;
 }
 
@@ -123,9 +130,12 @@ body {
 .background {
     flex: 1;
     text-align: center;
-    border: 0.1875rem solid #36C8C8; /* 3px */
-    border-radius: 0.3125rem; /* 5px */
-    padding: 0.625rem; /* 10px */
+    border: 0.1875rem solid #36C8C8;
+    /* 3px */
+    border-radius: 0.3125rem;
+    /* 5px */
+    padding: 0.625rem;
+    /* 10px */
     background-color: var(--bg-color);
     color: var(--text-color);
 }
@@ -159,6 +169,7 @@ hr {
     align-items: center;
     gap: 2rem;
     color: var(--text-color);
+
 }
 
 .ulFooter li {
@@ -193,8 +204,10 @@ hr {
 }
 
 .heading {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 5rem !important;
+    margin-bottom: 4rem !important;
+
 }
 
 .input-box {
@@ -214,7 +227,8 @@ hr {
     width: 20rem;
     padding: 0.75rem;
     font-size: 1rem;
-    border: 0.125rem solid #ccc; /* 2px */
+    border: 0.125rem solid #ccc;
+    /* 2px */
     border-radius: 0.25rem;
 }
 
@@ -245,6 +259,7 @@ hr {
 
 .btn:hover {
     background-color: #007cad;
+    cursor: pointer;
 }
 
 .contact {
@@ -274,7 +289,8 @@ hr {
     width: 20rem;
     padding: 0.75rem;
     font-size: 1rem;
-    border: 0.125rem solid #ccc; /* 2px */
+    border: 0.125rem solid #ccc;
+    /* 2px */
     border-radius: 0.25rem;
 }
 
@@ -324,12 +340,13 @@ hr {
 .container {
     background-color: var(--second-bg-color);
 }
+
 .product-details {
     padding: 2rem;
     background-color: var(--second-bg-color);
     border-radius: 0.5rem;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-    max-width: 60rem; 
+    max-width: 60rem;
     margin: 2rem auto;
 }
 
@@ -341,24 +358,25 @@ hr {
 }
 
 .box-product-image {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 1.5rem;
 }
+
 .box-product-image img {
     max-width: 100%;
     height: auto;
     border-radius: 0.5rem;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
     display: block;
-    margin:0;
+    margin: 0;
 
 
 }
 
-.box-product-description, 
-.box-product-price, 
+.box-product-description,
+.box-product-price,
 .box-product-author {
     margin: 1rem 0;
     padding: 1rem;
@@ -407,6 +425,7 @@ hr {
     .ulFooter li {
         margin: 1rem 2;
     }
+
     .sentence_haut {
         flex-direction: column;
         align-items: center;
@@ -420,4 +439,3 @@ hr {
         width: 100%;
     }
 }
-

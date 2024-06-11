@@ -21,10 +21,22 @@ const ProductDetail = () => {
     return (
         <div className='product-details'>
             <h1>{product.title}</h1>
-            <img src={product.image} alt={`Image du livre${product.title}`} />
-            <p>{product.description}</p>
-            <h5>{product.price}</h5>
-            <p>Auteur: {product.author.join(", ")}</p>
+
+            <div className='box-product-image'>
+                <img src={product.image} alt={`Image du livre${product.title}`} />
+            </div>
+
+            <div className='box-product-description'>
+                <p>{product.description}</p>
+            </div>
+
+            <div className='box-product-price'>
+                <h5>{product.price}</h5>
+            </div>
+
+            <div className='box-product-author'>
+                <p>Auteur: {product.author.join(", ")}</p>
+            </div>
         </div>
     );
 };

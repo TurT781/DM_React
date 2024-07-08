@@ -6,7 +6,7 @@ const HomePage = () => {
       <div className="sentence_haut">
         <div className="txtImg">
           <img
-            src="https://trello.com/1/cards/651d91910538041bd6f7bbba/attachments/651d91a58b5516f7d0f5075f/download/livre_bibli.jpg"
+            src="https://petitsobjetsdecompagnie1.wordpress.com/wp-content/uploads/2013/02/fond-bibliotheque.jpg?w=500"
             className="hautp"
             alt="Bookshelf"
           />
@@ -14,9 +14,9 @@ const HomePage = () => {
         </div>
 
         <div className="background">
-          <p>Horraires d'ouverture <br /><strong>Jours ouvrés</strong></p>
+          <p>Horraires d'ouverture <br /><strong>De 8h à 20h</strong></p>
           <p>
-            <hr />Temps de réponse<br /><strong>2 ans <br /> merci de votre compréhension </strong>
+            <hr />Temps de réponse<br /><strong> 2 heures <br /> Merci de votre compréhension !</strong>
           </p>
         </div>
       </div>

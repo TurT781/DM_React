@@ -22,8 +22,8 @@ const HomePage = () => {
       </div>
       <div className="textHomePage">
         <p>
-          Bienvenue sur notre plateforme de vente de livres en ligne !
-          Nous vous proposons une vaste sélection de livres allant des best-sellers aux classiques, en passant par les dernières nouveautés. Que vous soyez à la recherche de romans captivants, de passionnantes biographies, de livres pour enfants ou de manuels pratiques, notre boutique en ligne a tout ce qu'il vous faut.
+          Bienvenue sur ma plateforme fictive de livres en ligne !
+          Je vous proposons une vaste sélection de livres allant des best-sellers aux classiques, en passant par les dernières nouveautés. Que vous soyez à la recherche de romans captivants, de passionnantes biographies, de livres pour enfants ou de manuels pratiques, notre boutique en ligne a tout ce qu'il vous faut.
           Profitez d'une expérience d'achat fluide et agréable, avec des descriptions détaillées et des avis de lecteurs pour vous aider à faire le bon choix. Découvrez dès maintenant notre collection et trouvez votre prochaine lecture favorite.
         </p>
       </div>
